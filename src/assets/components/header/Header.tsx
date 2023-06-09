@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <header className={styles.headerContainer}>
         <a href="#" className={styles.logoCtn}>
-          <RiUserSmileLine size={35} />
+          <RiUserSmileLine size={45} />
           <span>You</span>
           <span>X</span>
         </a>
@@ -17,11 +17,17 @@ const Header = () => {
             <li>
               <a href="#">Home</a>
             </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Pages</a></li>
             <li>
-              Cart
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+            </li>
+            <li>
+              Cart (3)
               <ul>
                 {/* <li>one</li>
                 <li>Two</li>
@@ -32,7 +38,7 @@ const Header = () => {
         </div>
 
         <div className={styles.headerEmail}>
-          <MdOutlineEmail size={30} />
+          <MdOutlineEmail size={25} />
           <a href="#" className="email-link">
             john@you.com
           </a>
