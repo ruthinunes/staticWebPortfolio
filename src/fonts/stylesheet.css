@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Folito";
+  src: url("Folito-Light.eot");
+  src: local("Folito Light"), local("Folito-Light"),
+    url("Folito-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Folito";
+  src: url("Folito-Black.eot");
+  src: local("Folito Black"), local("Folito-Black"),
+    url("Folito-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Folito";
+  src: url("Folito-Regular.eot");
+  src: local("Folito Regular"), local("Folito-Regular"),
+    url("Folito-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Folito";
+  src: url("Folito-Medium.eot");
+  src: local("Folito Medium"), local("Folito-Medium"),
+    url("Folito-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Folito";
+  src: url("Folito-Bold.eot");
+  src: local("Folito Bold"), local("Folito-Bold"),
+    url("Folito-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
