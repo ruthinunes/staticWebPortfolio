@@ -1,11 +1,67 @@
-.img {
-  width: 100%;
-  height: 100%;
-  border-radius: 99%;
-}
+@import "../../globals.css";
 
-.mainCtn {
+.heroCtn {
+  margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid red;
+  align-items: center;
+  padding: 0 3rem;
+  gap: 3rem;
+}
+
+.heroContent {
+  margin-left: 5.5rem;
+}
+
+.heroContent > p {
+  font-weight: 400;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #5e5044;
+  margin-bottom: 2rem;
+}
+
+.heroContent > h1 {
+  font-size: 6.5rem;
+  line-height: 1.35;
+  color: #0f1615;
+}
+
+.heroButton {
+  padding: 2rem 4rem;
+  background-color: #5e5044;
+  color: var(--pure-white);
+  font-family: "Folito";
+  border-radius: 50px;
+  margin-top: 5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.heroButton:hover {
+  background-color: #0f1615;
+  transform: scale(1.1);
+}
+
+.heroImg {
+  justify-self: center;
+  width: 90%;
+}
+
+@media screen and (max-width: 1248px) {
+  .heroCtn {
+    gap: 0;
+  }
+
+
+  .heroContent > h1 {
+    font-size: 6.3rem;
+    /* margin-bottom: 2rem; */
+  }
+
+  .heroImg{
+    width: 85%;
+  }
 }
