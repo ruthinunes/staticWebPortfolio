@@ -21,7 +21,7 @@ const Header = () => {
         </a>
 
         <button className={styles.menuIcon} onClick={toggleMenu}>
-          {isActive ? <AiFillCloseCircle color="white"/> : <AiOutlineMenu />}
+          {isActive ? <AiFillCloseCircle color="white" /> : <AiOutlineMenu />}
         </button>
         <div
           className={
@@ -51,12 +51,18 @@ const Header = () => {
             <li>
               <a href="#">Pages</a>
             </li>
-            <li>
+            <li className={styles.cartList}>
               Cart (3)
-              <ul>
-                {/* <li>one</li>
-                <li>Two</li>
-                <li>Three</li> */}
+              <ul className={styles.subList}>
+                <li>
+                  <a>Item one</a>
+                </li>
+                <li>
+                  <a>Item two</a>
+                </li>
+                <li>
+                  <a>Item three</a>
+                </li>
               </ul>
             </li>
           </ul>
