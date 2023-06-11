@@ -84,22 +84,26 @@
   transform: scaleX(1);
 }
 
-.cartList:hover .subList {
-  display: block;
-}
-
 .subList {
-  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
   border-radius: 5px;
   padding-left: 0.5rem;
   width: 130px;
   position: absolute;
   background-color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
 }
 
 .subList li {
   padding: 0.8rem;
+}
+
+.cartList:hover .subList {
+  max-height: 200px;
+  opacity: 1;
 }
 
 .menuOverlay {
