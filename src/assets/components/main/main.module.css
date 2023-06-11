@@ -1,41 +1,40 @@
 @import "../../globals.css";
 
 .heroCtn {
-  margin-top: 7rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: 0 3rem;
-  gap: 3rem;
+  grid-template-rows: 1fr auto;
+  text-align: center;
+  margin-top: 6rem;
 }
 
 .heroContent {
-  margin-left: 5.5rem;
+  grid-row-start: -2;
+  align-self: center;
+  margin: 4rem 0;
 }
 
 .heroContent > p {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: bold;
   color: #5e5044;
   margin-bottom: 2rem;
 }
 
 .heroContent > h1 {
-  font-size: 6.5rem;
-  line-height: 1.35;
+  font-size: 3rem;
   color: #0f1615;
 }
 
 .heroButton {
-  padding: 2rem 4rem;
+  padding: 1.5rem 3rem;
   background-color: #5e5044;
   color: var(--pure-white);
   font-family: "Folito";
   border-radius: 50px;
-  margin-top: 5rem;
+  margin-top: 3rem;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -47,21 +46,139 @@
 
 .heroImg {
   justify-self: center;
-  width: 90%;
+  width: 80%;
 }
 
-@media screen and (max-width: 1248px) {
-  .heroCtn {
-    gap: 0;
+@media screen and (min-width: 408px) {
+  .heroContent > h1 {
+    max-width: 80%;
+    margin: 0 auto;
   }
 
+  .heroButton {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 468px) {
+  .heroContent > p {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
 
   .heroContent > h1 {
-    font-size: 6.3rem;
-    /* margin-bottom: 2rem; */
+    font-size: 3.5rem;
   }
 
-  .heroImg{
-    width: 85%;
+  .heroButton {
+    font-size: 1.8rem;
+    padding: 1.7rem 3.2rem;
+    margin-top: 5rem;
   }
+}
+
+@media screen and (min-width: 595px) {
+  .heroContent {
+    margin: 5rem 0;
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 632px) {
+  .heroContent > h1 {
+    max-width: 500px;
+  }
+  .heroImg {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 721px) {
+  .heroContent > p {
+    font-size: 2.7rem;
+  }
+
+  .heroContent > h1 {
+    font-size: 3.7rem;
+    max-width: 510px;
+  }
+
+  .heroButton {
+    font-size: 2rem;
+    padding: 1.9rem 3.5rem;
+  }
+  .heroImg {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .heroContent > h1 {
+    max-width: 532px;
+  }
+  .heroImg {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .heroCtn {
+    text-align: start;
+    margin-top: 7rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 3rem;
+  }
+  .heroImg {
+    justify-self: center;
+    width: 100%;
+  }
+
+  .heroContent {
+    padding-left: 2rem;
+    align-self: center;
+  }
+
+  .heroContent > p {
+    font-size: 2.5rem;
+  }
+
+  .heroContent > h1 {
+    max-width: 500px;
+    font-size: 4.3rem;
+    margin: 0;
+    line-height: 1.35;
+    color: #0f1615;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .heroCtn{
+    padding: 0 5rem;
+  }
+  
+  .heroContent {
+    margin: 0 auto;
+  }
+
+  .heroContent > p {
+    font-size: 3rem;
+  }
+
+  .heroContent > h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .heroContent > h1 {
+    font-size: 6rem;
+  }
+
+  .heroButton {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+}
 }
