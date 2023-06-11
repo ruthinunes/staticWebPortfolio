@@ -84,6 +84,24 @@
   transform: scaleX(1);
 }
 
+.cartList:hover .subList {
+  display: block;
+}
+
+.subList {
+  display: none;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  width: 130px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.subList li {
+  padding: 0.8rem;
+}
+
 .menuOverlay {
   display: block;
   position: fixed;
@@ -199,5 +217,3 @@
     position: revert;
   }
 }
-
-
